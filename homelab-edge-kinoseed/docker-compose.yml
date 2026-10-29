@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<docker-service-name>_1
+      APP_HOST: homelab-edge-kinoseed_web_1
+      APP_PORT: 8080
+  web:
+    # Set by the Kinoseed repository's Edge workflow on every push to its main branch.
+    image: ghcr.io/mrshakhov/kinoseed:0.6.0@sha256:c9fb37a72482b5006538bf80551fc6ab1dae57f0d509f9df10ecebd2f2aa564b
+    restart: on-failure
+    user: "1000:1000"
+    environment:
+      # Umbrel's qBittorrent app. admin/adminadmin is its default login: if it was
+      # changed, Kinoseed asks for the login once and keeps it in /data.
+      QBITTORRENT_URL: http://qbittorrent_server_1:8080
+      QBITTORRENT_USERNAME: admin
+      QBITTORRENT_PASSWORD: adminadmin
+      # Umbrel's Prowlarr app. Its API key is read from its config.xml (mounted read-only below).
+      PROWLARR_URL: http://prowlarr_server_1:9696
+      PROWLARR_CONFIG_XML: /prowlarr/config.xml
+    volumes:
+      # What Kinoseed keeps, apart from the released app's: settings saved from the app (TMDB key,
+      # qBittorrent login, download defaults) and which movie or series each torrent is.
+      - ${APP_DATA_DIR}/data:/data
+      # The folder, not the file: a file mount would keep the old file after Prowlarr rewrites it.
+      - ${UMBREL_ROOT}/app-data/prowlarr/data/config:/prowlarr:ro
