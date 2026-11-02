@@ -5,7 +5,7 @@ tagline: Kinoseed built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-store/main/homelab-kinoseed/icon.svg
 category: media
 # Set by the Kinoseed repository's Edge workflow: the version in its package.json and the commit.
-version: "0.6.0+ddc0c55"
+version: "0.6.0+6e15805"
 port: 8796
 description: >-
   Kinoseed as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinoseed and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -18,7 +18,9 @@ support: https://github.com/MrShakhov/umbrel-homelab-store/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - fix: pin the page as a modal opens, so the first focus in a sheet doesn't jump (#204)
+  - chore: cancel qBittorrent reads and Settings checks with the request (#206)
+
+  - fix: render the screenshot tests' text in grayscale (#205)
 dependencies:
   - qbittorrent
   - prowlarr
