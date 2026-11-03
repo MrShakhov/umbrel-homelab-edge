@@ -5,7 +5,7 @@ tagline: Kinoseed built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-store/main/homelab-kinoseed/icon.svg
 category: media
 # Set by the Kinoseed repository's Edge workflow: the version in its package.json and the commit.
-version: "0.6.1+905d0e1"
+version: "0.6.1+8079227"
 port: 8796
 description: >-
   Kinoseed as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinoseed and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -18,7 +18,11 @@ support: https://github.com/MrShakhov/umbrel-homelab-store/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - feat: set a priority for a whole folder of a torrent's files (#229)
+  - feat: sort desktop Downloads by clicking a column header (#230)
+
+  - docs: the retro of #207–#229, neighbours and hand-breaking in the PR template (#233)
+
+  - chore: give each checkout its own node_modules volume for the screenshot tests (#232)
 dependencies:
   - qbittorrent
   - prowlarr
