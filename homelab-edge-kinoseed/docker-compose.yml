@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
   web:
     # Set by the Kinoseed repository's Edge workflow on every push to its main branch.
-    image: ghcr.io/mrshakhov/kinoseed:sha-b0d7b69@sha256:ad4d7a19ceb1fbc2ff3fb70c93c62e8eef79508de598a2656d10192919f8fc35
+    image: ghcr.io/mrshakhov/kinoseed:sha-6592eb0@sha256:1367b4dbd50728936b9373f547b29f78a0b4d381d9d7aac0bc3258c0d1b59efc
     restart: on-failure
     user: "1000:1000"
     environment:
