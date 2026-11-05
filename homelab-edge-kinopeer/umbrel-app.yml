@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: homelab-edge-kinopeer
+name: Kinopeer Edge
+tagline: Kinopeer built from its main branch after every merge
+# The released app's icon, from the main store; it moves to homelab-kinopeer/ once that app is there.
+icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-store/main/homelab-kinoseed/icon.svg
+category: media
+# Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
+version: "0.7.0+712ac00"
+port: 8798
+description: >-
+  Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
+developer: MrShakhov
+website: https://github.com/MrShakhov/umbrel-homelab-edge
+submitter: MrShakhov
+submission: https://github.com/MrShakhov/umbrel-homelab-edge
+repo: ""
+support: https://github.com/MrShakhov/umbrel-homelab-store/issues
+gallery: []
+# Set by the Edge workflow: the commits since the previous edge build.
+releaseNotes: >-
+  Kinoseed Edge renamed to Kinopeer Edge. Its settings and title matches start empty: copy settings.json and matches.json from Kinoseed Edge's data folder to keep them.
+dependencies:
+  - qbittorrent
+  - prowlarr
+path: ""
+defaultUsername: ""
+defaultPassword: ""
