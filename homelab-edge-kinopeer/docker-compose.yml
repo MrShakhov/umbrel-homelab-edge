@@ -8,7 +8,7 @@ services:
   web:
     # Set by the Kinopeer repository's Edge workflow on every push to its main branch. Until its first
     # build it runs the last Kinoseed Edge image.
-    image: ghcr.io/mrshakhov/kinoseed:sha-712ac00@sha256:045ee2879b15043a8c1866dd4ea4a1d17569063b95155ffa946406e029e8c306
+    image: ghcr.io/kinopeer/kinopeer:sha-ad777c8@sha256:93593e926a2f603883b951f1a890afbaa7e35c730ba045a37c5fb8c492cb232a
     restart: on-failure
     user: "1000:1000"
     environment:
