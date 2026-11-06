@@ -3,7 +3,7 @@ id: homelab-edge-kinopeer
 name: Kinopeer Edge
 tagline: Kinopeer built from its main branch after every merge
 # The released app's icon, from the main store; it moves to homelab-kinopeer/ once that app is there.
-icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-store/main/homelab-kinoseed/icon.svg
+icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
 version: "0.7.0+0c4b563"
