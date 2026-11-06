@@ -21,6 +21,7 @@ copied to Kinopeer Edge's before uninstalling it.
 umbrel-app-store.yml              id: homelab-edge, the prefix for every app in this store
 homelab-edge-kinopeer/
   umbrel-app.yml                  manifest (port 8798 on Umbrel); version and release notes set by the workflow
+  icon.svg                        the app's icon, a copy of Kinopeer's scripts/icons/icon.svg, which the manifest links to
   docker-compose.yml              app_proxy + web service; image set by the workflow
   data/                           copied to the app's data folder, where Kinopeer keeps its settings
 ```
