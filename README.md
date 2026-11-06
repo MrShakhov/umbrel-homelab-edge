@@ -11,8 +11,9 @@ version and the commit, `0.6.0+abc1234`, as Settings → About shows it) and the
 previous build as release notes. umbrelOS checks the store every 5 minutes and offers the update.
 
 Kinopeer was called Kinoseed up to version 0.7. The old app, **Kinoseed Edge** (`homelab-edge-kinoseed`,
-port 8796), stays here unchanged until it's removed: its settings and title matches are in its data
-folder, `settings.json` and `matches.json`, which can be copied to Kinopeer Edge's.
+port 8796), left this store on 2026-11-06: an Umbrel that has it keeps running it, with no more updates.
+Its settings and title matches are in its data folder, `settings.json` and `matches.json`, which can be
+copied to Kinopeer Edge's before uninstalling it.
 
 ## Layout
 
