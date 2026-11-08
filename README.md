@@ -4,7 +4,8 @@ A Community App Store for umbrelOS with one app, **Kinopeer Edge** (`homelab-edg
 as it is on its main branch, rebuilt after every merge, for trying changes before they are released.
 The released app is in [umbrel-homelab-store](https://github.com/MrShakhov/umbrel-homelab-store).
 
-Nothing here is edited by hand. The Kinopeer repository's Edge workflow builds
+Nothing here is edited by hand but the app's links in `umbrel-app.yml`. The [Kinopeer repository](https://github.com/kinopeer/kinopeer)'s
+Edge workflow builds
 `ghcr.io/kinopeer/kinopeer:edge` (linux/arm64) on every push to its main branch, then commits here:
 the image by tag and digest in `docker-compose.yml`, and in `umbrel-app.yml` the version (Kinopeer's
 version and the commit, `0.6.0+abc1234`, as Settings → About shows it) and the commits since the
