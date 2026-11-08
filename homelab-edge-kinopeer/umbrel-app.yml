@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "0.7.2+f4447db"
+version: "0.7.2+c8d5c56"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,9 +19,9 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - chore: one key per meaning in the UI copy (#314)
+  - fix: measure only the code in coverage, not tmdb-proxy's config files (#319)
 
-  - docs: one meaning, one key for UI copy (#313)
+  - docs: owner's drafts for big doc changes, the retro's summary and counting its tags (#315)
 dependencies:
   - qbittorrent
   - prowlarr
