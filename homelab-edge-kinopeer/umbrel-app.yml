@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "0.7.2+e5b55a4"
+version: "0.7.2+079a00a"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,11 +19,7 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - fix: inline the touch icon into index.html, so iOS fetches nothing for the Home Screen (#308)
-
-  - docs: the retro of #264–#306 (#307)
-
-  - docs: the repository is public, and the runbook for that day goes (#306)
+  - fix: sign in again through Umbrel's proxy when a request is redirected to it (#309)
 dependencies:
   - qbittorrent
   - prowlarr
