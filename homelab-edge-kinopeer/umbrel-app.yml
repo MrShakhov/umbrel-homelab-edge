@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "0.7.2+aa46ff8"
+version: "0.7.2+3ba761f"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,9 +19,9 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - feat: offer Not stated in the release filters for releases whose name doesn't say (#327)
+  - fix: read an episode range within one season as that season, not a range of seasons (#333)
 
-  - docs: a visible side effect in a screenshot goes to the owner as a question (#326)
+  - docs: behavior as intended that turned out poor is a Feature, not a bug (#328)
 dependencies:
   - qbittorrent
   - prowlarr
