@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "1.0.0+064081c"
+version: "1.0.0+ac5f314"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,7 +19,17 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - fix: keep the Completed status at 4.5:1 in the light theme's desktop table (#435)
+  - chore(deps-dev): Bump the npm-minor-and-patch group with 3 updates (#442)
+
+  - chore(deps): Bump docker/login-action from 4.7.0 to 4.8.0 in the github-actions group (#441)
+
+  - docs: name the cloud proxy's REST calls for ready, auto-merge and merge (#445)
+
+  - docs: have the coordinator wake the deputy on Dependabot's PRs (#444)
+
+  - docs: make the deputy the one reviewer and approver of pull requests (#440)
+
+  - chore: make the checks guard a report that holds no PR (#439)
 dependencies:
   - qbittorrent
   - prowlarr
