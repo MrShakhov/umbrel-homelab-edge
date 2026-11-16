@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "1.0.0+214cf59"
+version: "1.0.0+a59d85a"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,7 +19,15 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - chore(deps): Bump the npm-major group across 1 directory with 3 updates (#443)
+  - chore: record each measuring tool's actual values as a CI artifact (#452)
+
+  - docs: point TESTING's Coverage at checks.json instead of copying its lists (#449)
+
+  - docs: record when a cloud run's rows first reached the effort journal (#448)
+
+  - docs: have the deputy start with journal check (#447)
+
+  - docs: follow the quality system's components at version 2, and say the effort journal records (#446)
 dependencies:
   - qbittorrent
   - prowlarr
