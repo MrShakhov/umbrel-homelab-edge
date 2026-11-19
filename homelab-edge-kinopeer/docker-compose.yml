@@ -13,6 +13,9 @@ services:
     environment:
       # Umbrel's app_proxy asks for Umbrel's login in front of Kinopeer, so Kinopeer's own login is off.
       KINOPEER_AUTH: "off"
+      # Umbrel serves Kinopeer at umbrel.local, its IP, Tor and names of the owner's own (Tailscale, a
+      # reverse proxy); app_proxy's login already keeps a rebound page out, so every host is let in.
+      KINOPEER_ALLOWED_HOSTS: "*"
       # Umbrel's qBittorrent app. admin/adminadmin is its default login: if it was
       # changed, Kinopeer asks for the login once and keeps it in /data.
       QBITTORRENT_URL: http://qbittorrent_server_1:8080
