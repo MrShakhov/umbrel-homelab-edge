@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "1.0.0+acc9541"
+version: "1.0.0+bbac403"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,11 +19,7 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - fix: size the desktop releases table's last column to its buttons (#484)
-
-  - chore: run the whole suite through Stryker's sandbox in the mutants' dry run (#487)
-
-  - fix: keep the data directory out of what the dev server serves (#483)
+  - feat: change qBittorrent's default save path and category folders from Settings (#490)
 dependencies:
   - qbittorrent
   - prowlarr
