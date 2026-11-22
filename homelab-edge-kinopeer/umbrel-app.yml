@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "1.2.0+c62f4dc"
+version: "1.2.0+504ac0e"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,15 +19,9 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - chore: drop Move files' "no access", which no supported qBittorrent answers (#534)
+  - chore: Settings' saves outlive their sheet, starting with the qBittorrent folders (#539)
 
-  - fix: the phone's releases screen names TMDB when the title's details fail (#536)
-
-  - chore: the Unraid template's requirements, search terms, licence and screenshots for CA (#529)
-
-  - docs: open a PR as a draft, then mark it ready and turn on auto-merge (#528)
-
-  - chore: run the tests named after a mutated file first (#520) (#527)
+  - fix: delete.smoke.ts reads only the user's title choices from matches.json (#538)
 dependencies:
   - qbittorrent
   - prowlarr
