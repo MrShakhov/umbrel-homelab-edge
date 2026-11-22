@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "1.2.0+bdac252"
+version: "1.2.0+ccdb65a"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,7 +19,11 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - chore: the push card's actions outlive Settings (closes #500) (#547)
+  - chore(deps-dev): Bump wrangler from 4.158.0 to 4.162.0 in /tmdb-proxy in the tmdb-proxy group (#541)
+
+  - chore(deps): Bump node from `a34ab6d` to `116b800` (#540)
+
+  - docs: install Kinopeer on Unraid from the Apps tab, now that Community Applications lists it (#548)
 dependencies:
   - qbittorrent
   - prowlarr
