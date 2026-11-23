@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "1.2.0+a117cab"
+version: "1.2.0+01d39b6"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,13 +19,7 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - feat: Sheet draws one close button on every sheet (#588)
-
-  - docs: install Kinopeer as qBittorrent's Alternative WebUI, and a comparison of the installs (#577)
-
-  - chore: smoke journeys through a real qBittorrent serving the WebUI build (#576)
-
-  - feat: Find for Prowlarr's address in the WebUI build (#575)
+  - feat: also search releases by the English title when the original isn't in Latin script (#589)
 dependencies:
   - qbittorrent
   - prowlarr
