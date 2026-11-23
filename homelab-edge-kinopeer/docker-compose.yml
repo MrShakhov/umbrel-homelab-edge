@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
   web:
     # Set by the Kinopeer repository's Edge workflow on every push to its main branch.
-    image: ghcr.io/kinopeer/kinopeer:sha-5144b5c@sha256:ad06571694d88e5ec4aa6cc2eb810042851e1c6d40dfb3f98d52163f2e58508b
+    image: ghcr.io/kinopeer/kinopeer:sha-52b311a@sha256:f863fc34e9b1e533a1ec7b20dea4d4999e4ccdae1b76fdac200d191e990bdbc6
     restart: on-failure
     user: "1000:1000"
     environment:
