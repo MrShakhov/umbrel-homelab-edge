@@ -6,7 +6,7 @@ tagline: Kinopeer built from its main branch after every merge
 icon: https://raw.githubusercontent.com/MrShakhov/umbrel-homelab-edge/main/homelab-edge-kinopeer/icon.svg
 category: media
 # Set by the Kinopeer repository's Edge workflow: the version in its package.json and the commit.
-version: "1.3.0+1681663"
+version: "1.3.0+8c8decd"
 port: 8798
 description: >-
   Kinopeer as it is on its main branch, rebuilt after every merge: the changes that are not released yet, with the bugs that come with them. It runs next to the released Kinopeer and keeps its own settings, but works with the same qBittorrent and Prowlarr, so what it does to torrents is real.
@@ -19,9 +19,13 @@ support: https://github.com/kinopeer/kinopeer/issues
 gallery: []
 # Set by the Edge workflow: the commits since the previous edge build.
 releaseNotes: >-
-  - fix: the TMDB proxy passes TMDB's own Retry-After on (#620)
+  - fix: Find's connect limit starts once the name has resolved (#626)
 
-  - fix: the TMDB proxy passes on no validators, so a refreshed answer replaces the cached one (#618)
+  - docs: install on TrueNAS from its apps catalog (#624)
+
+  - chore: the TMDB proxy's deploy check reads the worker's code from its bundle (#623)
+
+  - docs: a demo of the phone app at the top of the README (#622)
 dependencies:
   - qbittorrent
   - prowlarr
